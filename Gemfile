@@ -17,11 +17,14 @@ group :development, :test do
 end
 
 group :production do
+	gem 'rails_12factor'
 	gem 'rails_log_stdout', github: 'heroku/rails_log_stdout'
 	gem 'rails3_serve_static_assets', github: 'heroku/rails3_serve_static_assets'
 	gem 'pg'
-	gem 'rails_12factor'
+	
 end
+
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
